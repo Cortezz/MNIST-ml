@@ -14,8 +14,9 @@ class MNIST:
         return x_train, y_train
 
     def test_size(self, num):
-        print('Total test images in dataset: {}'.format(str(self.mnist.test.images.shape)))
-        x_test = self.mnist.test.images[:num,:]
-        y_test = self.mnist.test.labels[:num,:]
-        print('X - tested : {}'.format(x_test.shape))
-        print('Y - tested : '.format(y_test.shape))
+		print('Total test images in dataset: {}'.format(str(self.mnist.test.images.shape)))
+		x_test = self.mnist.test.images[:num,:]
+		y_test = self.mnist.test.labels[:num,:]
+		print('X - tested : {}'.format(x_test.shape))
+		print('Y - tested : {}'.format(y_test.shape))
+		return x_test, y_test
